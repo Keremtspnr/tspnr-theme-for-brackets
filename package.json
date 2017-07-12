@@ -2,13 +2,13 @@
     "name": "dark-material-theme-two",
     "title": "Tspnr Theme",
     "description": "Dark Material Theme 2 'den devşirdim.",
-    "homepage": "https://github.com/Vikaz/Dark-Material-Theme-2",
+    "homepage": "https://github.com/Keremtspnr/tspnr-theme-for-brackets",
     "version": "1.0",
     "author": "Kerem Taşpınar",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Vikaz/Dark-Material-Theme-2"
+        "url": "https://github.com/Keremtspnr/tspnr-theme-for-brackets"
     },
     "theme": {
         "file": "theme.less",
