@@ -1,0 +1,130 @@
+@sTxt: #A6B2C0;
+@bgC: #272B33;
+@selBg: rgba(224, 224, 224, .13);
+.pane-header,
+.active-pane .pane-header {
+    color: @sTxt;
+    background-color: @bgC;
+}
+
+.CodeMirror {
+    .cm-qualifier {
+        color: #D2945D;
+    }
+    .CodeMirror-linenumber,
+    .CodeMirror-scroll,
+    .CodeMirror-gutters {
+        color: @sTxt;
+        background-color: @bgC;
+    }
+    .CodeMirror-linenumber {
+        color: #607D8B;
+    }
+    .cm-matchingtag,
+    .CodeMirror-matchingtag {
+        bordefont-weight: bold;
+        background-color: rgba(250, 250, 250, .2);
+    }
+    .cm-matchingbracket,
+    .CodeMirror-matchingbracket {
+        color: #ffffff !important;
+        font-weight: bold;
+        font-size: 1.10em;
+        padding: 0 2px;
+        background-color: transparent;
+    }
+    .CodeMirror-cursor {
+        border-left: 1px solid @sTxt;
+        z-index: 3;
+    }
+    .cm-comment {
+        color: #59626F;
+    }
+    .cm-bracket,
+    .cm-variable,
+    .cm-operator {
+        color: @sTxt !important;
+    }
+    .cm-string {
+        /*color: #90C378;*/
+        /*color: #f1c40f;*/
+        color: #809a73;
+    }
+    .cm-string-2,
+    .cm-hr {
+        color: white;
+    }
+    .cm-variable-2 {
+        color: #DF6A73;
+    }
+    .CodeMirror-selected {
+        padding-left: 1px;
+        padding-right: 1px;
+        background-color: @selBg;
+        border-radius: 3px;
+    }
+    .cm-attribute {
+        color: #D2945D;
+    }
+    .cm-keyword {
+        color: #C679DD;
+    }
+    .cm-def {
+        color: #61AEEF;
+    }
+    .cm-atom,
+    .cm-number {
+        color: #D2945D;
+    }
+    .cm-meta {
+        color: #BE4E44 !important;
+    }
+    .cm-builtin {
+        color: #47B696;
+    }
+    //style
+    .cm-m-css.cm-tag {
+        color: #DF6A73;
+    }
+    .cm-m-css.cm-property {
+        color: @sTxt;
+    }
+    //html-xml
+    .cm-m-xml.cm-variable-2 {
+        color: green;
+    }
+    .cm-m-xml.cm-tag {
+        color: #DF6A73;
+    }
+    //scripts
+    .cm-m-javascript.cm-operator {
+        color: #BE4E44 !important;
+    }
+    .cm-m-javascript.cm-property {
+        color: #3B85EF;
+    }
+    //search
+    .CodeMirror-searching {
+        color: #ddd !important;
+    }
+    .CodeMirror-searching.searching-last,
+    .CodeMirror-searching.searching-first {
+        border-radius: 1px;
+        background-color: @selBg;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+    }
+    .CodeMirror-searching.searching-current-match {
+        background-color: gray;
+    }
+}
+
+//Code For Highlight Active Line
+.CodeMirror {
+    .CodeMirror-activeline-background {
+        background: rgba(0, 0, 0, .5);
+        outline: 1px solid #444 !important;
+    }
+    .CodeMirror-gutter-elt {
+        background: transparent;
+    }
+}
